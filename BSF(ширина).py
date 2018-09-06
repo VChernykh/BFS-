@@ -23,6 +23,4 @@ def BFS(start, end):                  #start - начальная вершина
         return "Not connect"
     else:
         return str(visited[end])
-    
-            
-print(BFS(4, 1))                      #ввод кратчайшего расстояния (в терминах количества рёбер)
+
