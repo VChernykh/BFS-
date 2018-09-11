@@ -1,12 +1,19 @@
 #Breadth First Search
 
+y, x = [int(elem) for elem in input().split(' ')]              #чтение размеров матрицы смежности
+matrix = [[int(j) for j in input().split()] for i in range(y)] #чтение матрицы смежности
+
+"""
 matrix = [[0,1,1,0,0],                #матрица смежности, задающая граф
           [1,0,0,1,0],
           [1,0,0,0,0],
           [0,1,0,0,1],
-          [0,0,0,1,0]] 
+          [0,0,0,1,0]]
+"""
+
 visited = [0] * len(matrix)           #список уровней вершин
 stack = []                            #создадим список (стэк) для очереди
+
 
 def BFS(start, end):                  #start - начальная вершина обхода, end - конечная
     stack.append(start)               #добавим в очередь 
