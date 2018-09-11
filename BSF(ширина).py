@@ -1,7 +1,7 @@
 #Breadth First Search
 
-y, x = [int(elem) for elem in input().split(' ')]              #чтение размеров матрицы смежности
-matrix = [[int(j) for j in input().split()] for i in range(y)] #чтение матрицы смежности
+n = int(input())              #чтение размера матрицы смежности
+matrix = [[int(j) for j in input().split()] for i in range(n)] #чтение матрицы смежности
 
 """
 matrix = [[0,1,1,0,0],                #матрица смежности, задающая граф
@@ -31,3 +31,4 @@ def BFS(start, end):                  #start - начальная вершина
     else:
         return str(visited[end])
 
+#print(BFS(0, 1),  '- кратчайшее расстояние (в терминах количества рёбер) от заданный вершин') # вывод кратчайшего расстояния (в терминах количества рёбер)
